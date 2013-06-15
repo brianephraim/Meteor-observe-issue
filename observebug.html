@@ -1,0 +1,12 @@
+<head>
+  <title>observebug</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+	<p>I was having an issue where Meteor's .observe() was firing "added" multiple times on the server.  It turns out that it was poor structuring on my part.  To demonstrate the issue, follow the instructions in the comments of observebug.js and watch the console in the terminal.</p>
+	Click here to add a document to the collection.  <input type="button" value="Click" />
+</template>
